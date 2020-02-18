@@ -19,8 +19,7 @@ requirements:
     - python
     - pip
   run:
-    - python
-    - typing >=3.6.1  # [py<35]
+    - python>3.5 | python, typing >=3.6.1
     - mypy_extensions >=0.3.0
     - typing_extensions >=3.7.4
 
