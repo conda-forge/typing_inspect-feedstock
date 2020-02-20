@@ -10,7 +10,7 @@ source:
   sha256: 811b44f92e780b90cfe7bac94249a4fae87cfaa9b40312765489255045231d9c
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   noarch: python
 
@@ -20,7 +20,6 @@ requirements:
     - pip
   run:
     - python
-    - typing >=3.6.1
     - mypy_extensions >=0.3.0
     - typing_extensions >=3.7.4
 
