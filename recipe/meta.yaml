@@ -1,5 +1,5 @@
 {% set name = "typing_inspect" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8f1b1dd25908dbfd81d3bebc218011531e7ab614ba6e5bf7826d887c834afab7
+  sha256: b0879cbc15d086f0ca7066eb775c062333e96f6d4622193d2423d8649c778480
 
 build:
   number: 0
