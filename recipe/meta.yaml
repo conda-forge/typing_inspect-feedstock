@@ -1,5 +1,5 @@
 {% set name = "typing_inspect" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8f1b1dd25908dbfd81d3bebc218011531e7ab614ba6e5bf7826d887c834afab7
+  sha256: 047d4097d9b17f46531bf6f014356111a1b6fb821a24fe7ac909853ca2a782aa
 
 build:
   number: 0
@@ -19,7 +19,7 @@ requirements:
     - python
     - pip
   run:
-    - python
+    - python >=3.3
     - mypy_extensions >=0.3.0
     - typing_extensions >=3.7.4
 
