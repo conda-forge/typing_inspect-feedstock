@@ -1,5 +1,5 @@
 {% set name = "typing_inspect" %}
-{% set version = "0.7.1" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 047d4097d9b17f46531bf6f014356111a1b6fb821a24fe7ac909853ca2a782aa
+  sha256: 8b1ff0c400943b6145df8119c41c244ca8207f1f10c9c057aeed1560e4806e3d
 
 build:
   number: 0
@@ -16,23 +16,28 @@ build:
 
 requirements:
   host:
-    - python
     - pip
+    - python >=3.5
   run:
-    - python >=3.3
     - mypy_extensions >=0.3.0
+    - python >=3.5
     - typing_extensions >=3.7.4
 
 test:
   imports:
     - typing_inspect
-
+  commands:
+    - pip check
+  requires:
+    - pip
+  
 about:
   home: http://github.com/ilevkivskyi/typing_inspect
   license: MIT
   license_file: LICENSE
-  summary: The “typing_inspect” module defines experimental API for runtime inspection of types defined in the standard “typing” module.
+  summary: Runtime inspection utilities for typing module.
 
 extra:
   recipe-maintainers:
     - tarcisioe
+    - thewchan
