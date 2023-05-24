@@ -1,11 +1,11 @@
-About typing_inspect
-====================
+About typing_inspect-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/typing_inspect-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/ilevkivskyi/typing_inspect
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/typing_inspect-feedstock/blob/main/LICENSE.txt)
 
 Summary: Runtime inspection utilities for typing module.
 
